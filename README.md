@@ -1,20 +1,20 @@
 # order book simulator
 
-C++ order book simulator with price-time priority matching and interactive CLI.
+C++ order book simulator with price-time priority matching, interactive CLI and unit tests.
 
-## Build
+## build
 
 ```bash
 cmake -B build && cmake --build build
 ```
 
-## Run
+## run
 
 ```bash
 ./build/sim
 ```
 
-## Commands
+## commands
 
 ```
 limit <buy|sell> <price> <qty>
@@ -22,13 +22,13 @@ market <buy|sell> <qty>
 quit
 ```
 
-## Test
+## gtest
 
 ```bash
-ctest --test-dir build
+./build/tests
 ```
 
-## Structure
+## structure
 
 ```
 include/   order_book.hpp
